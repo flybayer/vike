@@ -8,6 +8,7 @@ const onBeforeRender: Hook<'onBeforeRender'> = async (
 ): HookReturnTypeAsync<'onBeforeRender'> => {
   await sleep(700) // Simulate slow network
   const movies = await getStarWarsMovies()
+  debugger // LA_TEMP
   return {
     pageContext: {
       pageProps: {
