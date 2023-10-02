@@ -11,7 +11,9 @@ export default {
   },
   plugins: [
     ssr({
-      prerender: true
+      prerender: {
+        partial: true // LA_TEMP
+      }
     }),
     mdx(),
     react()
